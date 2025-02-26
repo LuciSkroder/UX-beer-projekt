@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <line class="st0" x1="4.34" y1="13.48" x2="25.61" y2="13.48"/>
+  <line class="st0" x1="5.79" y1="13.54" x2="7.57" y2="24.39"/>
+  <line class="st0" x1="24.19" y1="13.62" x2="22.6" y2="24.42"/>
+  <line class="st0" x1="7.57" y1="24.39" x2="22.6" y2="24.42"/>
+  <line class="st0" x1="10.86" y1="16.26" x2="11.33" y2="21.44"/>
+  <line class="st0" x1="19.18" y1="16.4" x2="18.76" y2="21.58"/>
+  <line class="st0" x1="15" y1="16.26" x2="15" y2="21.5"/>
+  <line class="st0" x1="6.82" y1="13.29" x2="10.13" y2="5.99"/>
+  <line class="st0" x1="23.16" y1="13.23" x2="19.82" y2="6.05"/>
+  <line class="st0" x1="17.81" y1="5.94" x2="19.73" y2="5.94"/>
+  <line class="st0" x1="12.16" y1="5.97" x2="10.22" y2="5.97"/>
+</svg>
