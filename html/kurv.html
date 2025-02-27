@@ -24,7 +24,7 @@
                             <h5 class="cart-title">Quantity</h5>
                             <input type="number" name="brownAle" id="brownAle" value="0"  class="form-control" disabled>
                             <h5 class="cart-title">Brown Ale øl dåse.</h5>
-                            <button class="addAdittional" onclick="addToCart('brownAle');">+</button>
+                            <button class="addToCart" onclick="addToCart('brownAle');">+</button>
                             <button class="removeOne" onclick="removeOne('brownAle');">-</button>
                             <button class="removeAll" onclick="removeAll('brownAle');">X</button>
                             <input class="" type="number" id="brownAle-total" value="0" disabled>
@@ -35,7 +35,7 @@
                             <h5 class="cart-title">Quantity</h5>
                             <input type="number" name="passion" id="passion" value="0"  class="form-control" disabled>
                             <h5 class="cart-title">Passion og Mango øl dåse.</h5>
-                            <button class="addAdittional" onclick="addToCart('passion');">+</button>
+                            <button class="addToCart" onclick="addToCart('passion');">+</button>
                             <button class="removeOne" onclick="removeOne('passion');">-</button>
                             <button class="removeAll" onclick="removeAll('passion');">X</button>
                             <input class="" type="number" id="passion-total" value="0" disabled>
@@ -46,7 +46,7 @@
                             <h5 class="cart-title">Quantity</h5>
                             <input type="number" name="lime" id="lime" value="0"  class="form-control" disabled>
                             <h5 class="cart-title">Lime og Ginger dåse øl.</h5>
-                            <button class="addAdittional" onclick="addToCart('lime');">+</button>
+                            <button class="addToCart" onclick="addToCart('lime');">+</button>
                             <button class="removeOne" onclick="removeOne('lime');">-</button>
                             <button class="removeAll" onclick="removeAll('lime');">X</button>
                             <input class="" type="number" id="lime-total" value="0" disabled>
@@ -57,7 +57,7 @@
                             <h5 class="cart-title">Quantity</h5>
                             <input type="number" name="pilsner" id="pilsner" value="0"  class="form-control" disabled>
                             <h5 class="cart-title">Pilsner dåse øl.</h5>
-                            <button class="addAdittional" onclick="addToCart('pilsner');">+</button>
+                            <button class="addToCart" onclick="addToCart('pilsner');">+</button>
                             <button class="removeOne" onclick="removeOne('pilsner');">-</button>
                             <button class="removeAll" onclick="removeAll('pilsner');">X</button>
                             <input class="" type="number" id="pilsner-total" value="0" disabled>
@@ -68,10 +68,10 @@
                             <h5 class="cart-title">Quantity</h5>
                             <input type="number" name="hyldeblomst" id="hyldeblomst" value="0"  class="form-control" disabled>
                             <h5 class="cart-title">Hyldeblomst dåse øl.</h5>
-                            <button class="addAdittional" onclick="addToCart('hyldeblomst');">+</button>
+                            <button class="addToCart" onclick="addToCart('hyldeblomst');">+</button>
                             <button class="removeOne" onclick="removeOne('hyldeblomst');">-</button>
                             <button class="removeAll" onclick="removeAll('hyldeblomst');">X</button>
-                            <input class="" type="number" id="hylde-total" value="0" disabled>
+                            <input class="" type="number" id="hyldeblomst-total" value="0" disabled>
                             <h5 class="cart-subtotal">Pris</h5>
                         </article>
                         <article id="grapeCart">
@@ -79,7 +79,7 @@
                             <h5 class="cart-title">Quantity</h5>
                             <input type="number" name="grape" id="grape" value="0"  class="form-control" disabled>
                             <h5 class="cart-title">Grape Frugt dåse øl.</h5>
-                            <button class="addAdittional" onclick="addToCart('grape');">+</button>
+                            <button class="addToCart" onclick="addToCart('grape');">+</button>
                             <button class="removeOne" onclick="removeOne('grape');">-</button>
                             <button class="removeAll" onclick="removeAll('grape');">X</button>
                             <input class="" type="number" id="grape-total" value="0" disabled>
@@ -87,12 +87,13 @@
                         </article>
                         <input class="" type="number" id="cart-total" value="0" disabled>
                         <h5 class="cart-total">Total Price</h5>
+                        <button class="resetEntireCart" onclick="resetEntireCart('');">Slet Kurv</button>
                     </section>
                 </li>
             </ul>
         </nav>
     </header>
 
-    
+    <script src="/js/shopping-cart.js"></script>
 </body>
 </html>
