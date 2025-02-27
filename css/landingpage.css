@@ -8,7 +8,7 @@
 
 .slideshow-wrapper {
     overflow: hidden; /* Sørger for, at billedet ikke viser dele uden for containeren, når det zoomer */
-    width: 300px; /* Justér bredden til din egen */
+    width: 100%; /* Justér bredden */
     height: auto; /* Tilpas højden afhængigt af billedets proportioner */
     display: flex;
     scroll-snap-type: x mandatory;
@@ -30,7 +30,7 @@
 
 .slide {
     scroll-snap-align: center;
-    flex: 0 0 33.33%; /* Hver slide fylder en tredjedel af skærmens bredde */
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,16 +46,25 @@
     cursor: pointer;
 }
   
-button .prev .next{
+.prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 2rem;
     border: none;
     cursor: pointer;
     padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 section.slideshow-container {
@@ -83,56 +92,33 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-}
-
-#slide2 img {
-width: 600px;
 }
 
 #slide3{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-}
-
-#slide3 img{
-    width: 450px;
 }
 
 #slide4{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-}
-
-#slide4 img{
-    width: 450px;
 }
 
 #slide5{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
-#slide5 img{
-    width: 450px;
-}
 
 #slide6{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
-#slide6 img{
-    width: 450px;
-}
 
 article.slideshow-wrapper {
     display: flex;
