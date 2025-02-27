@@ -1,3 +1,39 @@
-.hvem-container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
     
+
+body {
+    background-color: #F5F1EC; /* Baggrundsfarve */
+    color: black; /* Skrifttype */
+    font-family: 'Zen Maru Gothic';
+}
+
+.hvem-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 90rem;
+    height: 25rem;
+    background-color: #F4B65A;
+    border-radius: 10px;
+    margin: auto; 
+    margin-left: 10rem;
+    top: 10rem;
+    
+}
+
+.pilsner-image {
+    max-width: 100%; 
+    position: absolute;
+    left: -5rem; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 400px; 
+}
+
+.hvem-box {
+
 }
