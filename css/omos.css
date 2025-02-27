@@ -50,3 +50,84 @@ body {
     margin-bottom: 1rem;
     line-height: 2; 
 }
+
+.sammenhold-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 90rem;
+    height: 25rem;
+    background-color: #F0E2AB;
+    border-radius: 10px;
+    margin: auto; 
+    margin-left: 9rem;
+    margin-top: 30rem;
+    
+}
+
+.hyldeblomst-image {
+    max-width: 100%; 
+    position: absolute;
+    right: -5rem; /* Moves the image outside the right side */
+    top: 50%;
+    transform: translateY(-50%); /* Keeps it centered vertically */
+    width: 400px; /* Adjust the size as needed */
+}
+
+.sammenhold-box {
+    max-width: 60rem; 
+    margin-left: 9rem;
+}
+
+.sammenhold-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family:'Arial Black' ;
+}
+
+.sammenhold-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2; 
+}
+
+.stoette-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 90rem;
+    height: 25rem;
+    background-color: #D5A787;
+    border-radius: 10px;
+    margin: auto; 
+    margin-left: 9rem;
+    margin-top: 25rem;
+
+    
+}
+
+.brown-ale-image {
+    max-width: 100%; 
+    position: absolute;
+    left: -5rem; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 400px; 
+}
+
+.stoette-box {
+    max-width: 60rem; 
+    margin-left: 24rem;
+}
+
+.stoette-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family:'Arial Black' ;
+}
+
+.stoette-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2; 
+}
