@@ -19,3 +19,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.slide img {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+}
