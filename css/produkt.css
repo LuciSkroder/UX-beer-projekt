@@ -28,11 +28,6 @@ h1 {
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
-    gap: 20px;
-}
-
-.grid-product {
-    width: 23em;
 }
 
 .etikette-img {
@@ -62,7 +57,7 @@ h1 {
 }
 
 .basket {
-    width: 30px; /* Gør billedet 200px bredt */
+    width: 30px;
     height: auto; /* Bevarer proportionerne */
 }
 
