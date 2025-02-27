@@ -2,12 +2,12 @@
 
 //En array der indeholder alle vores produkter der kan være i kurven, hvor mange de er, deres pris og den totale pris.
 let cart = [
-    {type: "brownAle", quantity: 0, price: 15, total: 0},
-    {type: "passion", quantity: 0, price: 15, total: 0},
-    {type: "lime", quantity: 0, price: 15, total: 0},
-    {type: "pilsner", quantity: 0, price: 15, total: 0},
-    {type: "hyldeblomst", quantity: 0, price: 15, total: 0},
-    {type: "grape", quantity: 0, price: 15, total: 0},
+    {type: "brownAle", quantity: 0, price: 15, subTotal: 0},
+    {type: "passion", quantity: 0, price: 15, subTotal: 0},
+    {type: "lime", quantity: 0, price: 15, subTotal: 0},
+    {type: "pilsner", quantity: 0, price: 15, subTotal: 0},
+    {type: "hyldeblomst", quantity: 0, price: 15, subTotal: 0},
+    {type: "grape", quantity: 0, price: 15, subTotal: 0},
 ];
 
 
@@ -16,7 +16,7 @@ function saveCartToLocalStorage(){
     localStorage.setItem(`cart`, JSON.stringify(cart));
 }
 function loadCartFromLocalStorage(){
-    const storedCart = localStorage.getItem(cart)
+    const storedCart = localStorage.getItem("cart")
     if (storedCart) {
         cart = JSON.parse(storedCart);
         updateUIFromCart();
@@ -31,10 +31,10 @@ function updateUIFromCart(){
 
         if (quantityField && totalField) {
             quantityField.value = item.quantity;
-            totalField.value = item.total;
+            totalField.value = item.subTotal;
         }
     });
-    totalPrice();
+    updateTotalPrice();
 }
 
 //En function der tilføjer en enhed af det valgte produkt.
@@ -44,8 +44,9 @@ function addToCart(beer){
     if (product) {
         product.quantity++;
         updateSubTotal(beer);
-        updateTotalPrice(beer);
+        updateTotalPrice();
         saveCartToLocalStorage();
+        updateUIFromCart();
     }
 }
 
@@ -56,8 +57,9 @@ function removeOne(beer){
     if (product && product.quantity > 0) {
         product.quantity--;
         updateSubTotal(beer);
-        updateTotalPrice(beer);
+        updateTotalPrice();
         saveCartToLocalStorage();
+        updateUIFromCart();
     }
 }
 
@@ -68,8 +70,9 @@ function removeAll(beer){
     if (product) {
         product.quantity = 0;
         updateSubTotal(beer);
-        updateTotalPrice(beer);
+        updateTotalPrice();
         saveCartToLocalStorage();
+        updateUIFromCart();
     }
 }
 
@@ -80,21 +83,27 @@ function updateSubTotal(beer){
     if (product) {
         product.subTotal = product.quantity * product.price;
         document.getElementById(beer).value = product.quantity;
-        document.getElementById(beer + "-total").value = product.total;
+        document.getElementById(beer + "-total").value = product.subTotal;
 
-        totalPrice();
+        updateTotalPrice();
     }
 }
 
 //En function der opdatere total prisen af hele kurven.
-function updateTotalPrice(beer){
-    let product = cart.find( item => item.type === beer);
+function updateTotalPrice(){
+    const totalSum = cart.reduce((sum, item) => sum + item.subTotal, 0);
+    document.getElementById("cart-total").value = totalSum;
+}
 
-    if (product) {
-        product.total = cart.forEach(product.quantity * product.price);
-        document.getElementById(beer).value = product.quantity;
-        document.getElementById(beer + "-total").value = product.total;
+//En function der sletter hele din kurv.
+function resetEntireCart(){
+    cart.forEach( item => {
+        item.quantity = 0;
+        item.subTotal = 0;
+        updateSubTotal(item.type);
+    });
 
-        totalPrice();
-    }
+    updateTotalPrice()
+    saveCartToLocalStorage();
+    updateUIFromCart();
 }
