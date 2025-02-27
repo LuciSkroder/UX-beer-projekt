@@ -1,0 +1,21 @@
+
+
+.slideshow-container {
+    display: flex;
+    align-items: center;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    scroll-snap-align: center;
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
