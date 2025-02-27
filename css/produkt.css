@@ -23,6 +23,8 @@ h1 {
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 3em;
+    margin-right: 2em;
 }
 
 .etikette-img {
@@ -41,14 +43,11 @@ h1 {
 .description {
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
 }
 
 .top-row {
     display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    gap: 9em;
+    justify-content: space-between;
 }
 
 .basket {
