@@ -6,16 +6,14 @@
     overflow: hidden;
   }
 
-.slideshow-wrapper {
-    overflow: hidden; /* Sørger for, at billedet ikke viser dele uden for containeren, når det zoomer */
-    width: 100%; /* Justér bredden */
-    height: auto; /* Tilpas højden afhængigt af billedets proportioner */
+  .slideshow-wrapper {
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow-x: auto;
     width: 100%;
     padding: 10px 0;
+    gap: 5px; /* Giver lidt luft mellem billederne */
 }
 
 .slideshow-wrapper img {
@@ -29,14 +27,11 @@
 }
 
 .slide {
+    flex: 0 0 calc(100% / 4); /* Sørger for, at kun 4 slides er synlige ad gangen */
     scroll-snap-align: center;
-    flex: 0 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    /*mangler at font:
-    font-family: ;
-    color: ; */
 }
 
   

@@ -10,3 +10,18 @@ body {
     color: black; /* Skrifttype */
     font-family: 'Zen Maru Gothic';
 }
+
+.etikette-img {
+    width: 50%;
+    height: auto; /* Bevarer proportionerne */
+}
+
+.basket {
+    width: 30px; /* Gør billedet 200px bredt */
+    height: auto; /* Bevarer proportionerne */
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 kolonner */
+}
