@@ -1,0 +1,15 @@
+#footerimg {
+    width: 100vw;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.footerikoner{
+    width: 4em;
+    margin-right: 2rem;
+}
