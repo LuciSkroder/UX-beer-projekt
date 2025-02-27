@@ -63,11 +63,6 @@ section.slideshow-container {
     align-items: center;
 }
   
-button:hover {
-    background-color: #dd6d46;
-    color: white;
-}
-  
   /* For at skjule scrollbar */
 .slideshow-wrapper::-webkit-scrollbar {
     display: none;
