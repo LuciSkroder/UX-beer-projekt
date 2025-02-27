@@ -3,10 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
  
 #front-logo {
-    height: 50px;
-    width: 50px;
+    height: 10rem;
+    width: auto;
+    margin: 3rem;
+    position: fixed;
+}
+
+nav, nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#nav-links li {
+    margin: 3rem 10rem;
+}
+
+#nav-links li:first-child {
+    margin-left: 25rem;
+}
+
+#nav-links {
+    position: fixed;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+#nav-icons {
+    position: fixed;
+    right: 0;
+}
+
+#nav-icons li {
+    margin: 3rem 1rem;
+    
+}
+
+#basketicon {
+    margin-right: 3rem !important;
+}
+
+#cart-body {
+    display: none;
 }
 
 .icons {
