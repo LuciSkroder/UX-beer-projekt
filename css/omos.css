@@ -6,8 +6,8 @@
     
 
 body {
-    background-color: #F5F1EC; /* Baggrundsfarve */
-    color: black; /* Skrifttype */
+    background-color: #F5F1EC; 
+    color: black;
     font-family: 'Zen Maru Gothic';
 }
 
@@ -20,7 +20,7 @@ body {
     background-color: #F4B65A;
     border-radius: 10px;
     margin: auto; 
-    margin-left: 10rem;
+    margin-left: 9rem;
     top: 10rem;
     
 }
@@ -35,5 +35,18 @@ body {
 }
 
 .hvem-box {
+    max-width: 60rem; 
+    margin-left: 24rem;
+}
 
+.hvem-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family:'Arial Black' ;
+}
+
+.hvem-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2; 
 }
