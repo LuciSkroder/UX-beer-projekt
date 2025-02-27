@@ -9,8 +9,88 @@
 <body>
     <header>
         <nav>
-            <img src="/imgs/logo.svg" alt="ZerBuzz Brew's logo som er tekst hvor Zero står over en linje, med Buzz under, og Brew står i forlængelse af B'et i Buzz nedad">
-            
+            <a href="/index.html" id="front-logo"><img src="/imgs/logo.svg" alt="ZerBuzz Brew's logo som er tekst hvor Zero står over en linje, med Buzz under, og Brew står i forlængelse af B'et i Buzz nedad"></a>
+            <ul id="nav-links">
+                <li><a href="produkter.html">Produkter</a></li>
+                <li><a href="omos.html">Om os</a></li>
+            </ul>
+            <ul id="nav-icons">
+                <li><img src="/imgs/loop.svg"></li>
+                <li>
+                    <img src="/imgs/basket.svg">
+                    <section class="cart-body">
+                        <article id="brownAleCart">
+                            <img src="/imgs/brown-ale-standing.webp" alt="Billede af ZeroBuzz Brew's Brown Ale dåse øl">
+                            <h5 class="cart-title">Quantity</h5>
+                            <input type="number" name="brownAle" id="brownAle" value="0"  class="form-control" disabled>
+                            <h5 class="cart-title">Price</h5>
+                            <input type="number" id="brownAle-price" value="10" class="form-control" disabled>
+                            <h5 class="cart-title">Description</h5>
+                            <button class="addAdittional" onclick="addAddtional('brownAle');">+</button>
+                            <button class="removeOne" onclick="removeOne('brownAle');">-</button>
+                            <button class="removeAll" onclick="removeAll('brownAle');">X</button>
+                        </article>
+                        <article id="passionCart">
+                            <img src="/imgs/passion-standing.webp" alt="Billede af ZeroBuzz Brew's Passion og Mango dåse øl">
+                            <h5 class="cart-title">Quantity</h5>
+                            <input type="number" name="passion" id="passion" value="0"  class="form-control" disabled>
+                            <h5 class="cart-title">Price</h5>
+                            <input type="number" id="passion-price" value="10" class="form-control" disabled>
+                            <h5 class="cart-title">Description</h5>
+                            <button class="addAdittional" onclick="addAddtional('passion');">+</button>
+                            <button class="removeOne" onclick="removeOne('passion');">-</button>
+                            <button class="removeAll" onclick="removeAll('passion');">X</button>
+                        </article>
+                        <article id="limeCart">
+                            <img src="/imgs/ginger-lime-standing.webp" alt="Billede af ZeroBuzz Brew's Lime og Ginger dåse øl">
+                            <h5 class="cart-title">Quantity</h5>
+                            <input type="number" name="lime" id="lime" value="0"  class="form-control" disabled>
+                            <h5 class="cart-title">Price</h5>
+                            <input type="number" id="lime-price" value="10" class="form-control" disabled>
+                            <h5 class="cart-title">Description</h5>
+                            <button class="addAdittional" onclick="addAddtional('lime');">+</button>
+                            <button class="removeOne" onclick="removeOne('lime');">-</button>
+                            <button class="removeAll" onclick="removeAll('lime');">X</button>
+                        </article>
+                        <article id="pilsnerCart">
+                            <img src="/imgs/brown-ale-standing.webp" alt="Billede af ZeroBuzz Brew's Brown Ale dåse øl">
+                            <h5 class="cart-title">Quantity</h5>
+                            <input type="number" name="pilsner" id="pilsner" value="0"  class="form-control" disabled>
+                            <h5 class="cart-title">Price</h5>
+                            <input type="number" id="pilsner-price" value="10" class="form-control" disabled>
+                            <h5 class="cart-title">Description</h5>
+                            <button class="addAdittional" onclick="addAddtional('pilsner');">+</button>
+                            <button class="removeOne" onclick="removeOne('pilsner');">-</button>
+                            <button class="removeAll" onclick="removeAll('pilsner');">X</button>
+                        </article>
+                        <article id="hyldeblomstCart">
+                            <img src="/imgs/brown-ale-standing.webp" alt="Billede af ZeroBuzz Brew's Brown Ale dåse øl">
+                            <h5 class="cart-title">Quantity</h5>
+                            <input type="number" name="hyldeblomst" id="hyldeblomst" value="0"  class="form-control" disabled>
+                            <h5 class="cart-title">Price</h5>
+                            <input type="number" id="hyldeblomst-price" value="10" class="form-control" disabled>
+                            <h5 class="cart-title">Description</h5>
+                            <button class="addAdittional" onclick="addAddtional('hyldeblomst');">+</button>
+                            <button class="removeOne" onclick="removeOne('hyldeblomst');">-</button>
+                            <button class="removeAll" onclick="removeAll('hyldeblomst');">X</button>
+                        </article>
+                        <article id="grapeCart">
+                            <img src="/imgs/brown-ale-standing.webp" alt="Billede af ZeroBuzz Brew's Brown Ale dåse øl">
+                            <h5 class="cart-title">Quantity</h5>
+                            <input type="number" name="grape" id="grape" value="0"  class="form-control" disabled>
+                            <h5 class="cart-title">Price</h5>
+                            <input type="number" id="grape-price" value="10" class="form-control" disabled>
+                            <h5 class="cart-title">Description</h5>
+                            <button class="addAdittional" onclick="addAddtional('grape');">+</button>
+                            <button class="removeOne" onclick="removeOne('grape');">-</button>
+                            <button class="removeAll" onclick="removeAll('grape');">X</button>
+                        </article>
+                        
+                        <input class="" type="number" id="cart-total" value="0" disabled>
+                        <h5 class="cart-title">Total Price</h5>
+                    </section>
+                </li>
+            </ul>
         </nav>
     </header>
 
