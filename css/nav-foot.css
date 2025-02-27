@@ -1,12 +1,12 @@
 #footerimg {
-    width: 100vw;
+    width: 100%;
 }
 
 #footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .footerikoner{
