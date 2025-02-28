@@ -2,7 +2,6 @@ body{
     background-color: #f5f1ec;
     color: black;
     font-family: 'Zen Maru Gothic';
-<<<<<<< Updated upstream
 }
 
 h2{
@@ -13,7 +12,8 @@ h2{
 }
 
 h3{
-    font-size: 2em;
+    font-size: 4em;
+    color: rgb(218, 121, 2)
 }
 
 #brus{
@@ -38,12 +38,13 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-=======
->>>>>>> Stashed changes
+    text-align: center;
+    margin: 2em;
 }
 
-h1{
-
+#sammenhold {
+    font-size: 1.2em;
+    line-height: 4em;
 }
 
 h2{
