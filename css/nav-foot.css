@@ -84,11 +84,12 @@ nav {
 }
 
 #cart-body {
-    width: 23rem;
+    width: 28rem;
     height: 37rem;
     position: fixed;
     right: 0;
     margin-top: 5rem;
+    margin-right: 1rem;
     background-color: #ff0000;
     border-radius: 10px;
     padding: 1%;
@@ -101,10 +102,21 @@ nav {
     margin: 1rem;
 }
 
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
 .cart-title {
     margin: 0.5rem;
     font-size: 1.2rem;
-    align-self: end;
+    align-self: ce;
+    white-space: nowrap;
 }
 
 .talfelt {
@@ -112,6 +124,19 @@ nav {
     height: 1.5rem;
     text-align: center;
     align-self: end;
+    margin: 0.5rem;
+}
+
+#cart-total {
+    align-self: center;
+    width: 7rem;
+    height: 3.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.totalPrice {
+    align-self: center;
 }
 
 .beerimg {
