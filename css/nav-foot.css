@@ -127,3 +127,9 @@ nav {
     width: 75px;
     height: auto; /* for at bevare proportionerne */
 }
+
+.social-ikoner {
+    display: flex; /* Gør sektionen til en flex-container */
+    gap: 1rem; /* Tilføj mellemrum mellem ikonerne */
+    align-items: center; /* Juster ikonerne vertikalt, hvis nødvendigt */
+}
