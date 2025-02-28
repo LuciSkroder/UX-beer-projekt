@@ -18,7 +18,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    top: 10rem;
+    top: 25rem;
     
 }
 
@@ -58,7 +58,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    margin-top: 30rem;
+    margin-top: 50rem;
     
 }
 
@@ -152,4 +152,5 @@ body {
     background-color: #FF9520; 
     transform: scale(1.05);
     color: #A55A20;
+    cursor: pointer;
 }
