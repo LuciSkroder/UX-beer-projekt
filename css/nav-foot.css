@@ -93,7 +93,7 @@ nav {
 
 /* Footer */
 #footerimg {
-    width: 102%;
+    width: 100%;
 }
 
 #footer {
@@ -101,12 +101,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 2em;
+    padding: 2em;
 }
 
 .footerikoner {
     width: 4em;
-    margin-right: 2rem;
+    gap: 2em;
 }
 
 .text-footer {
@@ -120,6 +120,7 @@ nav {
 
 .bold {
     font-weight: bold;
+    font-size: 1.55rem;
 }
 
 .logo-footer img {
