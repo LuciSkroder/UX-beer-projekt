@@ -1,48 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Lag_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85.69 153.13">
-  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 122.39">
   <defs>
     <style>
-      .st0 {
-        letter-spacing: .02em;
-      }
-
-      .st0, .st1, .st2, .st3, .st4 {
+      .cls-1, .cls-2, .cls-3 {
         isolation: isolate;
       }
 
-      .st0, .st2, .st3, .st4 {
+      .cls-2 {
+        letter-spacing: .04em;
+      }
+
+      .cls-2, .cls-3 {
         font-family: Arial-BoldMT, Arial;
         font-size: 25px;
         font-weight: 700;
       }
 
-      .st2 {
-        letter-spacing: 0em;
-      }
-
-      .st3 {
-        letter-spacing: .04em;
-      }
-
-      .st5 {
+      .cls-4 {
         fill: none;
         stroke: #000;
         stroke-miterlimit: 10;
       }
     </style>
   </defs>
-  <g class="st1">
-    <text class="st3" transform="translate(2.67 21.45)"><tspan x="0" y="0">ZE</tspan></text>
-    <text class="st0" transform="translate(40.73 21.45)"><tspan x="0" y="0">R</tspan></text>
-    <text class="st3" transform="translate(60.72 21.45)"><tspan x="0" y="0">O</tspan></text>
-    <text class="st2" transform="translate(2.67 58.45)"><tspan x="0" y="0">B</tspan></text>
-    <text class="st3" transform="translate(22.44 58.45)"><tspan x="0" y="0">UZZ</tspan></text>
+  <g class="cls-1">
+    <g class="cls-1">
+      <text class="cls-2" transform="translate(1.38 21.45)"><tspan x="0" y="0">ZERO</tspan></text>
+    </g>
+    <g class="cls-1">
+      <text class="cls-2" transform="translate(.41 46.69)"><tspan x="0" y="0">BUZZ</tspan></text>
+    </g>
   </g>
-  <g class="st1">
-    <text class="st4" transform="translate(2.69 85.47)"><tspan x="0" y="0">R</tspan></text>
-    <text class="st4" transform="translate(2.69 115.47)"><tspan x="0" y="0">E</tspan></text>
-    <text class="st4" transform="translate(2.69 145.47)"><tspan x="0" y="0">W</tspan></text>
+  <g class="cls-1">
+    <g class="cls-1">
+      <text class="cls-3" transform="translate(.41 68.98)"><tspan x="0" y="0">R</tspan><tspan x="0" y="22">E</tspan><tspan x="0" y="44">W</tspan></text>
+    </g>
   </g>
-  <line class="st5" x1="3.35" y1="27.53" x2="82.35" y2="27.53"/>
+  <line class="cls-4" y1="24.51" x2="79" y2="24.51"/>
 </svg>
