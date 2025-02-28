@@ -20,6 +20,7 @@ nav, nav ul {
 
 #nav-links li {
     margin: 3rem 10rem;
+    font-family: 'zen maru gothic';
 }
 
 #nav-links li:first-child {
