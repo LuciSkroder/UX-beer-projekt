@@ -2,6 +2,7 @@ body{
     background-color: #f5f1ec;
     color: black;
     font-family: 'Zen Maru Gothic';
+<<<<<<< Updated upstream
 }
 
 h2{
@@ -37,7 +38,43 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+=======
+>>>>>>> Stashed changes
 }
+
+h1{
+
+}
+
+h2{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+#brus{
+    display: flex;
+    align-items: center;
+}
+
+/*Styling af store billeder*/
+#bigphoto{
+    width: 100%;
+}
+
+#infografik{
+    width: 100%;
+}
+
+#oelbrus{
+    width: 250em;
+}
+
 
 /*Styling af Merch "diasshow"*/
 .slideshow-container {

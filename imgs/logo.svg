@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 122.39">
   <defs>
     <style>
@@ -6,23 +7,60 @@
         isolation: isolate;
       }
 
+=======
+<<<<<<< HEAD
+<svg id="Lag_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85.7 121.6">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2 {
+        isolation: isolate;
+      }
+
+      .st1 {
+        letter-spacing: 0em;
+      }
+
+      .st1, .st2 {
+=======
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 122.39">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+>>>>>>> Stashed changes
       .cls-2 {
         letter-spacing: .04em;
       }
 
       .cls-2, .cls-3 {
+<<<<<<< Updated upstream
+=======
+>>>>>>> ffb56ee5a5db826c376011e0640833577c6056a7
+>>>>>>> Stashed changes
         font-family: Arial-BoldMT, Arial;
         font-size: 25px;
         font-weight: 700;
       }
 
+<<<<<<< Updated upstream
       .cls-4 {
+=======
+<<<<<<< HEAD
+      .st3 {
+=======
+      .cls-4 {
+>>>>>>> ffb56ee5a5db826c376011e0640833577c6056a7
+>>>>>>> Stashed changes
         fill: none;
         stroke: #000;
         stroke-miterlimit: 10;
       }
     </style>
   </defs>
+<<<<<<< Updated upstream
   <g class="cls-1">
     <g class="cls-1">
       <text class="cls-2" transform="translate(1.38 21.45)"><tspan x="0" y="0">ZERO</tspan></text>
@@ -37,4 +75,37 @@
     </g>
   </g>
   <line class="cls-4" y1="24.51" x2="79" y2="24.51"/>
+=======
+<<<<<<< HEAD
+  <g class="st0">
+    <g class="st0">
+      <text class="st1" transform="translate(4.7 24.5)"><tspan x="0" y="0">ZERO</tspan></text>
+    </g>
+    <g class="st0">
+      <text class="st1" transform="translate(3.8 49.7)"><tspan x="0" y="0">BUZZ</tspan></text>
+    </g>
+  </g>
+  <g class="st0">
+    <g class="st0">
+      <text class="st2" transform="translate(3.8 72)"><tspan x="0" y="0">R</tspan><tspan x="0" y="22">E</tspan><tspan x="0" y="44">W</tspan></text>
+    </g>
+  </g>
+  <line class="st3" x1="3.3" y1="27.5" x2="82.3" y2="27.5"/>
+=======
+  <g class="cls-1">
+    <g class="cls-1">
+      <text class="cls-2" transform="translate(1.38 21.45)"><tspan x="0" y="0">ZERO</tspan></text>
+    </g>
+    <g class="cls-1">
+      <text class="cls-2" transform="translate(.41 46.69)"><tspan x="0" y="0">BUZZ</tspan></text>
+    </g>
+  </g>
+  <g class="cls-1">
+    <g class="cls-1">
+      <text class="cls-3" transform="translate(.41 68.98)"><tspan x="0" y="0">R</tspan><tspan x="0" y="22">E</tspan><tspan x="0" y="44">W</tspan></text>
+    </g>
+  </g>
+  <line class="cls-4" y1="24.51" x2="79" y2="24.51"/>
+>>>>>>> ffb56ee5a5db826c376011e0640833577c6056a7
+>>>>>>> Stashed changes
 </svg>

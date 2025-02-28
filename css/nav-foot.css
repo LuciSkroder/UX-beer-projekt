@@ -63,18 +63,39 @@ nav, nav ul {
     height: 50px;
 }
 
+
+/* Footer */
 #footerimg {
     width: 100%;
 }
 
-#footer{
+#footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 2em;
 }
 
-.footerikoner{
+.footerikoner {
     width: 4em;
     margin-right: 2rem;
+}
+
+.text-footer {
+    font-size: 1.5rem;
+}
+
+.text-footer-middle {
+    font-size: 1.5rem;
+    font-family: 'Arial Black';
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.logo-footer img {
+    width: 75px;
+    height: auto; /* for at bevare proportionerne */
 }
