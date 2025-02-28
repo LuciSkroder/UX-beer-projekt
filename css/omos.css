@@ -134,3 +134,16 @@ body {
    width: 100%;
 
 }
+
+.stoette-btn {
+    display: inline-block;
+    background-color: #A55A20; 
+    color: #FF9520;
+    padding: 10px 30px;
+    padding-top: 7px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
