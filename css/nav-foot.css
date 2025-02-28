@@ -9,6 +9,7 @@
     width: auto;
     margin: 3rem;
     position: fixed;
+    z-index: 100;
 }
 
 nav, nav ul {
@@ -18,10 +19,11 @@ nav, nav ul {
 }
 
 nav {
-    background: linear-gradient(#acacac, transparent);
-    height: 200px;
+    background: linear-gradient(#696969, transparent);
+    height: 100px;
     width: 1920px;
     position: fixed;
+    z-index: 90;
 }
 
 #nav-links li {

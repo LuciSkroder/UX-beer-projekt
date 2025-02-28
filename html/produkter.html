@@ -19,126 +19,230 @@
 
 </head>
 <body>
-<main>
-    <h1>PRODUKTER</h1>
+    <header>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="produkter.html">Produkter</a></li>
+                <li><a href="omos.html">Om os</a></li>
+            </ul>
+            <a href="/index.html"><img id="front-logo" src="/imgs/logo.svg" alt="ZerBuzz Brew's logo som er tekst hvor Zero står over en linje, med Buzz under, og Brew står i forlængelse af B'et i Buzz nedad"></a>
+            <ul id="nav-icons">
+                <li><img class="icons loopMargin" src="/imgs/loop.svg"></li>
+                <li id="basketicon">
+                    <button id="showBasket" onclick="showCart();"><img class="icons" src="/imgs/basket.svg"></button>
+                    <section class="cartHide" id="cart-body">
+                        <article class="kurvflex" id="brownAleCart">
+                            <img class="beerimg" src="/imgs/brown-ale-standing.webp" alt="Billede af ZeroBuzz Brew's Brown Ale dåse øl">
+                            <section class="column-flex">
+                                <h5 class="cart-title">Brown Ale øl dåse.</h5>
+                                <section class="row-flex">
+                                    <input class="talfelt" type="number" name="brownAle" id="brownAle" value="0"  class="form-control" disabled>
+                                    <button class="addToCart talfelt" onclick="addToCart('brownAle');">+</button>
+                                    <button class="removeOne talfelt" onclick="removeOne('brownAle');">-</button>
+                                    <button class="removeAll talfelt" onclick="removeAll('brownAle');">X</button>
+                                    <h5 class="cart-subtotal cart-title">Pris</h5>
+                                    <input class="talfelt" type="number" id="brownAle-total" value="0" disabled>
+                                </section>
+                            </section>
+                        </article>
+                        <article class="kurvflex" id="passionCart">
+                            <img class="beerimg" src="/imgs/passion-standing.webp" alt="Billede af ZeroBuzz Brew's Passion og Mango dåse øl">
+                            <section class="column-flex">
+                                <h5 class="cart-title">Passion og Mango øl dåse.</h5>
+                                <section class="row-flex">
+                                    <input class="talfelt" type="number" name="passion" id="passion" value="0"  class="form-control" disabled>
+                                    <button class="addToCart talfelt" onclick="addToCart('passion');">+</button>
+                                    <button class="removeOne talfelt" onclick="removeOne('passion');">-</button>
+                                    <button class="removeAll talfelt" onclick="removeAll('passion');">X</button>
+                                    <h5 class="cart-subtotal cart-title">Pris</h5>
+                                    <input class="talfelt" type="number" id="passion-total" value="0" disabled>
+                                </section>
+                            </section>
+                        </article>
+                        <article class="kurvflex" id="limeCart">
+                            <img class="beerimg" src="/imgs/ginger-lime-standing.webp" alt="Billede af ZeroBuzz Brew's Lime og Ginger dåse øl">
+                            <section class="column-flex">
+                                <h5 class="cart-title">Lime og Ginger dåse øl.</h5>
+                                <section class="row-flex">
+                                    <input class="talfelt" type="number" name="lime" id="lime" value="0"  class="form-control" disabled>
+                                    <button class="addToCart talfelt" onclick="addToCart('lime');">+</button>
+                                    <button class="removeOne talfelt" onclick="removeOne('lime');">-</button>
+                                    <button class="removeAll talfelt" onclick="removeAll('lime');">X</button>
+                                    <h5 class="cart-subtotal cart-title">Pris</h5>
+                                    <input class="talfelt" type="number" id="lime-total" value="0" disabled>
+                                </section>
+                            </section>
+                        </article>
+                        <article class="kurvflex" id="pilsnerCart">
+                            <img class="beerimg" src="/imgs/pilsner-standing.webp" alt="Billede af ZeroBuzz Brew's Pilsner dåse øl">
+                            <section class="column-flex">
+                                <h5 class="cart-title">Pilsner dåse øl.</h5>
+                                <section class="row-flex">
+                                    <input class="talfelt" type="number" name="pilsner" id="pilsner" value="0"  class="form-control" disabled>
+                                    <button class="addToCart talfelt" onclick="addToCart('pilsner');">+</button>
+                                    <button class="removeOne talfelt" onclick="removeOne('pilsner');">-</button>
+                                    <button class="removeAll talfelt" onclick="removeAll('pilsner');">X</button>
+                                    <h5 class="cart-subtotal cart-title">Pris</h5>
+                                    <input class="talfelt" type="number" id="pilsner-total" value="0" disabled>
+                                </section> 
+                            </section>
+                        </article>
+                        <article class="kurvflex" id="hyldeblomstCart">
+                            <img class="beerimg" src="/imgs/hyldeblomst-standing.webp" alt="Billede af ZeroBuzz Brew's Hyldeblomst dåse øl">
+                            <section class="column-flex">
+                                <h5 class="cart-title">Hyldeblomst dåse øl.</h5>
+                                <section class="row-flex">
+                                    <input class="talfelt" type="number" name="hyldeblomst" id="hyldeblomst" value="0"  class="form-control" disabled>
+                                    <button class="addToCart talfelt" onclick="addToCart('hyldeblomst');">+</button>
+                                    <button class="removeOne talfelt" onclick="removeOne('hyldeblomst');">-</button>
+                                    <button class="removeAll talfelt" onclick="removeAll('hyldeblomst');">X</button>
+                                    <h5 class="cart-subtotal cart-title">Pris</h5>
+                                    <input class="talfelt" type="number" id="hyldeblomst-total" value="0" disabled>
+                                </section>
+                            </section>
+                        </article>
+                        <article class="kurvflex" id="grapeCart">
+                            <img class="beerimg" src="/imgs/grape-standing.webp" alt="Billede af ZeroBuzz Brew's Grape Frugt dåse øl">
+                            <section class="column-flex">
+                                <h5 class="cart-title">Grape Frugt dåse øl.</h5>
+                                <section class="row-flex">
+                                    <input class="talfelt" type="number" name="grape" id="grape" value="0"  class="form-control" disabled>
+                                    <button class="addToCart talfelt" onclick="addToCart('grape');">+</button>
+                                    <button class="removeOne talfelt" onclick="removeOne('grape');">-</button>
+                                    <button class="removeAll talfelt" onclick="removeAll('grape');">X</button>
+                                    <h5 class="cart-subtotal cart-title">Pris</h5>
+                                    <input class="talfelt" type="number" id="grape-total" value="0" disabled>
+                                </section>
+                            </section>
+                        </article>
+                        <h5 class="totalPrice cart-title">Total Price</h5>
+                        <input type="number" id="cart-total" value="0" disabled>
+                        <button class="resetEntireCart" onclick="resetEntireCart('');">Slet Kurv</button>
+                    </section>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>PRODUKTER</h1>
 
-    <section class="product-site">
-        <aside class="filter">
-            <h3>ALLE PRODUKTER</h3>
-            <h3>SMAGSVARIANTER</h3>
-            <h3>NYE PRODUKTER</h3>
-        </aside>
+        <section class="product-site">
+            <aside class="filter">
+                <h3>ALLE PRODUKTER</h3>
+                <h3>SMAGSVARIANTER</h3>
+                <h3>NYE PRODUKTER</h3>
+            </aside>
 
-        <article class="products">
-            <section class="grid-product">
-                <img class="etikette-img" src="/imgs/etikette-mango.webp" alt="etikette for mango">
-                <section class="description">
-                    <figure class="top-row">
-                            <p>Passion & Mango</p>
-                        <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+            <article class="products">
+                <section class="grid-product">
+                    <img class="etikette-img" src="/imgs/etikette-mango.webp" alt="etikette for mango">
+                    <section class="description">
+                        <figure class="top-row">
+                                <p>Passion & Mango</p>
+                            <figure class="add-to-cart">
+                                <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            </figure>
                         </figure>
-                    </figure>
-                        <p>15 kr.</p>
+                            <p>15 kr.</p>
+                    </section>
                 </section>
-            </section>
 
 
-            <!--Produkt - Ginger & Lime-->
-            <section class="grid-product">
-                <img class="etikette-img" src="/imgs/etikette-lime.webp" alt="etikette for lime">
-                <section class="description">
-                    <figure class="top-row">
-                        <p>Ginger & Lime</p>
-                        <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                <!--Produkt - Ginger & Lime-->
+                <section class="grid-product">
+                    <img class="etikette-img" src="/imgs/etikette-lime.webp" alt="etikette for lime">
+                    <section class="description">
+                        <figure class="top-row">
+                            <p>Ginger & Lime</p>
+                            <figure class="add-to-cart">
+                                <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            </figure>
                         </figure>
-                    </figure>
-                        <p>15 kr.</p>
+                            <p>15 kr.</p>
+                    </section>
                 </section>
-            </section>
 
-            <!--Produkt - Grapefrugt & citrahumle-->
-            <section class="grid-product">
-                <img class="etikette-img" src="/imgs/etikette-grape.webp" alt="etikette for grapefrugt og citrahumle">
-                <section class="description">
-                    <figure class="top-row">
-                        <p>Grapefrugt & citrahumle</p>
-                        <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                <!--Produkt - Grapefrugt & citrahumle-->
+                <section class="grid-product">
+                    <img class="etikette-img" src="/imgs/etikette-grape.webp" alt="etikette for grapefrugt og citrahumle">
+                    <section class="description">
+                        <figure class="top-row">
+                            <p>Grapefrugt & citrahumle</p>
+                            <figure class="add-to-cart">
+                                <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            </figure>
                         </figure>
-                    </figure>
-                        <p>15 kr.</p>
+                            <p>15 kr.</p>
+                    </section>
                 </section>
-            </section>
 
-     
-            <!--Produkt - Hyldeblomst & citron-->
-            <section class="grid-product">
-                <img class="etikette-img" src="/imgs/etikette-hylde-citron.webp" alt="etikette for Hyldeblomst og citron">
-                <section class="description">
-                    <figure class="top-row">
-                        <p>Hyldeblomst & citron</p>
-                        <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+        
+                <!--Produkt - Hyldeblomst & citron-->
+                <section class="grid-product">
+                    <img class="etikette-img" src="/imgs/etikette-hylde-citron.webp" alt="etikette for Hyldeblomst og citron">
+                    <section class="description">
+                        <figure class="top-row">
+                            <p>Hyldeblomst & citron</p>
+                            <figure class="add-to-cart">
+                                <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            </figure>
                         </figure>
-                    </figure>
-                        <p>15 kr.</p>
+                            <p>15 kr.</p>
+                    </section>
                 </section>
-            </section>
 
-            <!--Produkt - Pilsner-->
-            <section class="grid-product">
-                <img class="etikette-img" src="/imgs/etikette-pilsner.webp" alt="etikette for pilsner">
-                <section class="description">
-                    <figure class="top-row">
-                        <p>Pilsner</p>
-                        <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                <!--Produkt - Pilsner-->
+                <section class="grid-product">
+                    <img class="etikette-img" src="/imgs/etikette-pilsner.webp" alt="etikette for pilsner">
+                    <section class="description">
+                        <figure class="top-row">
+                            <p>Pilsner</p>
+                            <figure class="add-to-cart">
+                                <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            </figure>
                         </figure>
-                    </figure>
-                        <p>15 kr.</p>
+                            <p>15 kr.</p>
+                    </section>
                 </section>
-            </section>
 
 
-            <!--Produkt - Brown ale-->
-            <section class="grid-product">
-                <img class="etikette-img" src="/imgs/etikette-brown-ale.webp" alt="etikette for brown ale">
-                <section class="description">
-                    <figure class="top-row">
-                        <p>Brown ale</p>
-                        <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                <!--Produkt - Brown ale-->
+                <section class="grid-product">
+                    <img class="etikette-img" src="/imgs/etikette-brown-ale.webp" alt="etikette for brown ale">
+                    <section class="description">
+                        <figure class="top-row">
+                            <p>Brown ale</p>
+                            <figure class="add-to-cart">
+                                <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            </figure>
                         </figure>
-                    </figure>
-                        <p>15 kr.</p>
+                            <p>15 kr.</p>
+                    </section>
                 </section>
-            </section>
-        </article>
-    </section>
-</main>
+            </article>
+        </section>
+    </main>
 
 
 
-<!--Footer-->
-    <footer>
-        <img src="/imgs/footerimg.webp" alt="Illustration" id="footerimg">
-        <article id="footer">
-            <section class="text-footer">
-                <h6 class="bold"> Kontakt:</h6>
-                <p>zbb@gmail.com</p>
-                <p>+45 30 54 72 80</p>
-            </section>
-            <section class="logo-footer">
-                <img src="/imgs/logo.svg" alt="logo">
-            </section>
-            <section class="social-ikoner">
-                <img src="/imgs/instagram.webp" alt="instagram ikon" class="footerikoner">
-                <img src="/imgs/facebook.webp" alt="facebook ikon" class="footerikoner">
-            </section>
-        </article>
-    </footer>
-    <script src="/js/shopping-cart.js"></script>
+    <!--Footer-->
+        <footer>
+            <img src="/imgs/footerimg.webp" alt="Illustration" id="footerimg">
+            <article id="footer">
+                <section class="text-footer">
+                    <h6 class="bold"> Kontakt:</h6>
+                    <p>zbb@gmail.com</p>
+                    <p>+45 30 54 72 80</p>
+                </section>
+                <section class="logo-footer">
+                    <img src="/imgs/logo.svg" alt="logo">
+                </section>
+                <section class="social-ikoner">
+                    <img src="/imgs/instagram.webp" alt="instagram ikon" class="footerikoner">
+                    <img src="/imgs/facebook.webp" alt="facebook ikon" class="footerikoner">
+                </section>
+            </article>
+        </footer>
+        <script src="/js/shopping-cart.js"></script>
 </body>
 </html>
