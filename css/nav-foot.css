@@ -80,10 +80,30 @@ nav {
 
 .cartShow {
     display: flex;
+    flex-direction: column;
 }
 
 #cart-body {
-    
+    width: 23rem;
+    height: 37rem;
+    position: fixed;
+    right: 0;
+    margin-top: 5rem;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 1%;
+    overflow: scroll;
+}
+
+.kurvflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.talfelt {
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
 }
 
 .beerimg {
