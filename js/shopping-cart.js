@@ -1,5 +1,6 @@
 "use strict";
 
+
 //En array der indeholder alle vores produkter der kan være i kurven, hvor mange de er, deres pris og den totale pris.
 let cart = [
     {type: "brownAle", quantity: 0, price: 15, subTotal: 0},
@@ -19,9 +20,11 @@ function loadCartFromLocalStorage(){
     const storedCart = localStorage.getItem("cart")
     if (storedCart) {
         cart = JSON.parse(storedCart);
+        console.log(cart);
         updateUIFromCart();
     }
 }
+loadCartFromLocalStorage();
 
 //En function der opdatere de tal der bliver vist i vores array baseret på om der er blevet tilføjet eller fjernet produkter.
 function updateUIFromCart(){
