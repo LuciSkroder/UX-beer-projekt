@@ -107,3 +107,16 @@ function resetEntireCart(){
     saveCartToLocalStorage();
     updateUIFromCart();
 }
+
+
+function showCart(){
+    const showCart = document.getElementById("cart-body");
+
+    if (showCart.classList.contains('cartShow')){
+        showCart.classList.remove('cartShow');
+        showCart.classList.add('cartHide');
+    } else {
+        showCart.classList.remove('cartHide');
+        showCart.classList.add('cartShow');
+    }
+}

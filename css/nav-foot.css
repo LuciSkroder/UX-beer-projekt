@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
  
 #front-logo {
     height: 10rem;
@@ -16,6 +15,13 @@ nav, nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+}
+
+nav {
+    background: linear-gradient(#acacac, transparent);
+    height: 200px;
+    width: 1920px;
+    position: fixed;
 }
 
 #nav-links li {
@@ -47,16 +53,37 @@ nav, nav ul {
     
 }
 
+#showBasket {
+    background-color: transparent;
+    border: none;
+}
+
 #basketicon {
     margin-right: 3rem !important;
 }
 
-#cart-body {
+.icons {
+    height: 50px;
+    position: fixed;
+    right: 0;
+    margin-right: 3rem;
+}
+
+.loopMargin {
+    margin-right: 10rem;
+    margin-top: 0.8rem;
+}
+
+.cartHide {
     display: none;
 }
 
-.icons {
-    height: 50px;
+.cartShow {
+    display: flex;
+}
+
+#cart-body {
+    
 }
 
 .beerimg {
