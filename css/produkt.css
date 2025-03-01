@@ -54,3 +54,21 @@ h1 {
     width: 30px;
     height: auto; /* Bevarer proportionerne */
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Start med at være usynlig */
+    transition: opacity 0.3s ease; /* Gør overgangen glidende */
+    width: 100%;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1; /* Bliv synlig ved hover */
+}
