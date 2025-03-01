@@ -1,3 +1,7 @@
+main {
+    padding-top: 5rem;
+}
+
 body {
     background-color: #F5F1EC; 
     color: black;
@@ -14,7 +18,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    top: 10rem;
+    top: 25rem;
     
 }
 
@@ -54,7 +58,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    margin-top: 30rem;
+    margin-top: 50rem;
     
 }
 
@@ -129,4 +133,24 @@ body {
     margin-top: 20rem;
    width: 100%;
 
+}
+
+.stoette-btn {
+    display: inline-block;
+    background-color: #A55A20; 
+    color: #FF9520;
+    padding: 10px 30px;
+    padding-top: 7px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.stoette-btn:hover {
+    background-color: #FF9520; 
+    transform: scale(1.05);
+    color: #A55A20;
+    cursor: pointer;
 }
