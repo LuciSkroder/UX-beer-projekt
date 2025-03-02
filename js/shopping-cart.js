@@ -16,6 +16,7 @@ let cart = [
 function saveCartToLocalStorage(){
     localStorage.setItem(`cart`, JSON.stringify(cart));
 }
+
 function loadCartFromLocalStorage(){
     const storedCart = localStorage.getItem("cart")
     if (storedCart) {
@@ -24,7 +25,7 @@ function loadCartFromLocalStorage(){
         updateUIFromCart();
     }
 }
-loadCartFromLocalStorage();
+loadCartFromLocalStorage(); //Ved at load cart her sikre vi at kurven altid er opdateret til den seneste version.
 
 //En function der opdatere de tal der bliver vist i vores array baseret på om der er blevet tilføjet eller fjernet produkter.
 function updateUIFromCart(){
@@ -35,6 +36,7 @@ function updateUIFromCart(){
         if (quantityField && totalField) {
             quantityField.value = item.quantity;
             totalField.value = item.subTotal;
+            updateVisuals(item);
         }
     });
     updateTotalPrice();
@@ -46,10 +48,12 @@ function addToCart(beer){
 
     if (product) {
         product.quantity++;
+        
         updateSubTotal(beer);
         updateTotalPrice();
         saveCartToLocalStorage();
         updateUIFromCart();
+        updateVisuals(product);
     }
 }
 
@@ -63,6 +67,7 @@ function removeOne(beer){
         updateTotalPrice();
         saveCartToLocalStorage();
         updateUIFromCart();
+        updateVisuals(product);
     }
 }
 
@@ -76,6 +81,7 @@ function removeAll(beer){
         updateTotalPrice();
         saveCartToLocalStorage();
         updateUIFromCart();
+        updateVisuals(product);
     }
 }
 
@@ -104,6 +110,7 @@ function resetEntireCart(){
         item.quantity = 0;
         item.subTotal = 0;
         updateSubTotal(item.type);
+        updateVisuals(item);
     });
 
     updateTotalPrice()
@@ -111,7 +118,7 @@ function resetEntireCart(){
     updateUIFromCart();
 }
 
-
+//En function der gør at når man klikker på kurv-ikonet så viser eller skjuler den kurven.
 function showCart(){
     const showCart = document.getElementById("cart-body");
 
@@ -121,5 +128,18 @@ function showCart(){
     } else {
         showCart.classList.remove('cartHide');
         showCart.classList.add('cartShow');
+    }
+}
+
+// Coming soon
+function updateVisuals(item){
+    const itemAmount = document.getElementById(item.type + "Cart");
+    
+    if (item.quantity > 0){
+        itemAmount.classList.remove('beerHide');
+        itemAmount.classList.add('beerShow');
+    } else {
+        itemAmount.classList.remove('beerShow');
+        itemAmount.classList.add('beerHide');
     }
 }

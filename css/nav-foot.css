@@ -98,10 +98,17 @@ nav {
     overflow: scroll;
 }
 
-.kurvflex {
+.beerShow {
     display: flex;
+}
+
+.kurvflex {
     flex-direction: row;
     margin: 1rem;
+}
+
+.beerHide {
+    display: none;
 }
 
 .column-flex {

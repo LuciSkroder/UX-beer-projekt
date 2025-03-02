@@ -31,7 +31,7 @@
                 <li id="basketicon">
                     <button id="showBasket" onclick="showCart();"><img class="icons" src="/imgs/basket.svg"></button>
                     <section class="cartHide" id="cart-body">
-                        <article class="kurvflex" id="brownAleCart">
+                        <article class="kurvflex beerHide" id="brownAleCart">
                             <img class="beerimg" src="/imgs/brown-ale-standing.webp" alt="Billede af ZeroBuzz Brew's Brown Ale dåse øl">
                             <section class="column-flex">
                                 <h5 class="cart-title">Brown Ale øl dåse.</h5>
@@ -45,7 +45,7 @@
                                 </section>
                             </section>
                         </article>
-                        <article class="kurvflex" id="passionCart">
+                        <article class="kurvflex beerHide" id="passionCart">
                             <img class="beerimg" src="/imgs/passion-standing.webp" alt="Billede af ZeroBuzz Brew's Passion og Mango dåse øl">
                             <section class="column-flex">
                                 <h5 class="cart-title">Passion og Mango øl dåse.</h5>
@@ -59,7 +59,7 @@
                                 </section>
                             </section>
                         </article>
-                        <article class="kurvflex" id="limeCart">
+                        <article class="kurvflex beerHide" id="limeCart">
                             <img class="beerimg" src="/imgs/ginger-lime-standing.webp" alt="Billede af ZeroBuzz Brew's Lime og Ginger dåse øl">
                             <section class="column-flex">
                                 <h5 class="cart-title">Lime og Ginger dåse øl.</h5>
@@ -73,7 +73,7 @@
                                 </section>
                             </section>
                         </article>
-                        <article class="kurvflex" id="pilsnerCart">
+                        <article class="kurvflex beerHide" id="pilsnerCart">
                             <img class="beerimg" src="/imgs/pilsner-standing.webp" alt="Billede af ZeroBuzz Brew's Pilsner dåse øl">
                             <section class="column-flex">
                                 <h5 class="cart-title">Pilsner dåse øl.</h5>
@@ -87,7 +87,7 @@
                                 </section> 
                             </section>
                         </article>
-                        <article class="kurvflex" id="hyldeblomstCart">
+                        <article class="kurvflex beerHide" id="hyldeblomstCart">
                             <img class="beerimg" src="/imgs/hyldeblomst-standing.webp" alt="Billede af ZeroBuzz Brew's Hyldeblomst dåse øl">
                             <section class="column-flex">
                                 <h5 class="cart-title">Hyldeblomst dåse øl.</h5>
@@ -101,7 +101,7 @@
                                 </section>
                             </section>
                         </article>
-                        <article class="kurvflex" id="grapeCart">
+                        <article class="kurvflex beerHide" id="grapeCart">
                             <img class="beerimg" src="/imgs/grape-standing.webp" alt="Billede af ZeroBuzz Brew's Grape Frugt dåse øl">
                             <section class="column-flex">
                                 <h5 class="cart-title">Grape Frugt dåse øl.</h5>
@@ -144,7 +144,7 @@
                     <figure class="top-row">
                             <p>Passion & Mango</p>
                         <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            <button class="addToCart talfelt" onclick="addToCart('passion');"><img class="basket" src="/imgs/basket.svg" alt="Basket"></button>
                         </figure>
                             <p>15 kr.</p>
                     </section>
@@ -161,7 +161,7 @@
                     <figure class="top-row">
                         <p>Ginger & Lime</p>
                         <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            <button class="addToCart talfelt" onclick="addToCart('lime');"><img class="basket" src="/imgs/basket.svg" alt="Basket"></button>
                         </figure>
                             <p>15 kr.</p>
                     </section>
@@ -177,7 +177,7 @@
                     <figure class="top-row">
                         <p>Grapefrugt & citrahumle</p>
                         <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            <button class="addToCart talfelt" onclick="addToCart('grape');"><img class="basket" src="/imgs/basket.svg" alt="Basket"></button>
                         </figure>
                             <p>15 kr.</p>
                     </section>
@@ -194,7 +194,7 @@
                     <figure class="top-row">
                         <p>Hyldeblomst & citron</p>
                         <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            <button class="addToCart talfelt" onclick="addToCart('hyldeblomst');"><img class="basket" src="/imgs/basket.svg" alt="Basket"></button>
                         </figure>
                             <p>15 kr.</p>
                     </section>
@@ -210,7 +210,7 @@
                     <figure class="top-row">
                         <p>Pilsner</p>
                         <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            <button class="addToCart talfelt" onclick="addToCart('pilsner');"><img class="basket" src="/imgs/basket.svg" alt="Basket"></button>
                         </figure>
                             <p>15 kr.</p>
                     </section>
@@ -227,7 +227,7 @@
                     <figure class="top-row">
                         <p>Brown ale</p>
                         <figure class="add-to-cart">
-                            <img class="basket" src="/imgs/basket.svg" alt="Basket">
+                            <button class="addToCart talfelt" onclick="addToCart('brownAle');"><img class="basket" src="/imgs/basket.svg" alt="Basket"></button>
                         </figure>
                             <p>15 kr.</p>
                     </section>
