@@ -84,6 +84,21 @@ h3{
     pointer-events: none; /* Allow clicks to pass through the overlay */
 }
 
+/* Styling af knap*/
+.button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 40px; /* Add some padding */
+    background-color: rgb(218, 121, 2); /* Button background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: rgb(180, 100, 0); /* Darker shade on hover */
+}
 
 
 #brus{
