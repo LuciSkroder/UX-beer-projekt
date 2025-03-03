@@ -21,7 +21,7 @@ nav, nav ul {
 
 nav {
     background: linear-gradient(#696969ba, transparent);
-    height: 21em;
+    height: 13em;
     width: 1920px;
     position: fixed;
     z-index: 90;
