@@ -8,6 +8,7 @@ body {
     font-family: 'Zen Maru Gothic';
 }
 
+
 .hvem-container {
     display: flex;
     position: relative;
@@ -18,7 +19,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    top: 25rem;
+    top: 18rem;
     
 }
 
@@ -58,7 +59,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    margin-top: 50rem;
+    margin-top: 40rem;
     
 }
 
@@ -98,7 +99,7 @@ body {
     border-radius: 10px;
     margin: auto; 
     margin-left: 15rem;
-    margin-top: 25rem;
+    margin-top: 22rem;
 
     
 }
