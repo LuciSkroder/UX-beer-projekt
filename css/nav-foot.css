@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'zen maru gothic';
 }
  
 #front-logo {
@@ -28,7 +29,6 @@ nav {
 
 #nav-links li {
     margin: 3rem 10rem;
-    font-family: 'zen maru gothic';
 }
 
 #nav-links li:first-child {
@@ -119,14 +119,15 @@ nav {
 .row-flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .cart-title {
     margin: 0.5rem;
-    font-size: 1.2rem;
-    align-self: ce;
-    white-space: nowrap;
+    font-size: 1.4rem;
+    align-self: center;
     margin-top: 2.5rem;
+    margin-left: -0.2rem;
 }
 
 .beerimg {
@@ -143,7 +144,6 @@ nav {
     margin: 0.5rem;
     font-size: 1.25rem;
     color: #000000;
-    font-weight: bold;
     background-color: #e8e3dd;
     border-radius: 8px;
     border-style: none;
@@ -172,11 +172,9 @@ nav {
 }
 
 #cart-total {
-    align-self: center;
-    width: 7rem;
-    height: 3.5rem;
-    text-align: center;
-    margin: 0.5rem;
+    text-align: end;
+    margin-right: 0.5rem;
+    font-weight: bold;
 }
 
 .totalPrice {
