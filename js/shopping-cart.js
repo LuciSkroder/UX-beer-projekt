@@ -163,3 +163,13 @@ function clearCart() {
     updateUIFromCart();
     updateTotalPrice();
 }
+
+
+function openCart() {
+    const showCart = document.getElementById("cart-body");
+    
+    if (showCart.classList.contains('cartHide')){
+        showCart.classList.remove('cartHide');
+        showCart.classList.add('cartShow');
+    }
+}

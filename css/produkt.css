@@ -73,3 +73,7 @@ h1 {
 .image-container:hover .hover-img {
     opacity: 1; /* Bliv synlig ved hover */
 }
+
+.talfelt:active {
+    background-color: #eda10f;
+}
