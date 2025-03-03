@@ -131,7 +131,7 @@ function showCart(){
     }
 }
 
-// Coming soon
+//En function der gør at et produkt kun bliver vist i kurven hvis den er blevet tilføjet til kurven.
 function updateVisuals(item){
     const itemAmount = document.getElementById(item.type + "Cart");
     
