@@ -244,3 +244,12 @@ article.slideshow-wrapper {
     justify-content: center;
 }
 
+.slideshow-wrapper {
+    display: flex;
+    overflow: hidden; /* Skjul overskydende slides */
+}
+
+.slide {
+    flex: 0 0 calc(100% / 4); /* Sørg for, at kun 4 slides er synlige ad gangen */
+    display: none; /* Skjul alle slides som standard */
+}
