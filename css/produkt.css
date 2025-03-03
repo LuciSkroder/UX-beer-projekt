@@ -52,8 +52,15 @@ h1 {
 }
 
 .basket {
-    width: 30px;
+    width: 40px;
     height: auto; /* Bevarer proportionerne */
+}
+
+.add-to-cart {
+    width: 40px;
+    background-color: #e8e3dd;
+    border-radius: 8px;
+    border-style: none;
 }
 
 .image-container {
