@@ -150,6 +150,23 @@ nav {
     border-style: none;
 }
 
+.fjernfelt {
+    width: 3.8rem;
+    height: 1.8rem;
+    text-align: center;
+    align-content: center;
+    align-self: end;
+    margin: 0.5rem;
+    font-size: 1.45rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #e8e3dd;
+    border-radius: 8px;
+    border-style: none;
+    background-color: transparent;
+    margin-bottom: 10rem;
+}
+
 .quantiyFelt {
     width: 2.5rem;
     height: 2.5rem;
