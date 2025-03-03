@@ -126,17 +126,42 @@ nav {
     font-size: 1.2rem;
     align-self: ce;
     white-space: nowrap;
+    margin-top: 2.5rem;
+}
+
+.beerimg {
+    height: 10rem;
+    margin-right: 0.75rem;
 }
 
 .talfelt {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     text-align: center;
+    align-content: center;
     align-self: end;
     margin: 0.5rem;
     font-size: 1.25rem;
     color: #000000;
     font-weight: bold;
+    background-color: #e8e3dd;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.quantiyFelt {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    align-content: center;
+    align-self: end;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: bold;
+    background-color: #e8e3dd;
+    border-radius: 10px;
+    border-style: none;
 }
 
 #brownAle-total, #passion-total, #lime-total, #pilsner-total, #hyldeblomst-total, #grape-total, #cart-total {
@@ -158,18 +183,13 @@ nav {
     align-self: center;
 }
 
-.beerimg {
-    height: 6rem;
-    margin-right: 0.75rem;
-}
-
 .resetEntireCart {
-    background-color: #fcdede;
+    background-color: #faeeee;
 }
 
 .betaling {
     margin-top: 1rem;
-    background-color: rgb(49, 123, 219);
+    background-color: #afe5f9;
 }
 
 .betaling, .resetEntireCart {
