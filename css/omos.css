@@ -8,7 +8,7 @@ body {
     font-family: 'Zen Maru Gothic';
 }
 
-
+/* First container - "Hvem er vi?" */
 .hvem-container {
     display: flex;
     position: relative;
@@ -22,6 +22,7 @@ body {
     top: 18rem;
 }
 
+/* Pilsner image - Øl */
 .pilsner-image {
     max-width: 100%; 
     position: absolute;
@@ -31,6 +32,7 @@ body {
     width: 400px; 
 }
 
+/* Tekst box */
 .hvem-box {
     max-width: 60rem; 
     margin-left: 24rem;
@@ -48,6 +50,7 @@ body {
     line-height: 2; 
 }
 
+/* Second container - "Sammenhold er vigtigere end alkohol" */
 .sammenhold-container {
     display: flex;
     position: relative;
@@ -62,15 +65,17 @@ body {
     
 }
 
+/* Hyldeblomst image - Øl */
 .hyldeblomst-image {
     max-width: 100%; 
     position: absolute;
-    right: -5rem; /* Moves the image outside the right side */
+    right: -5rem; 
     top: 50%;
-    transform: translateY(-50%); /* Keeps it centered vertically */
-    width: 400px; /* Adjust the size as needed */
+    transform: translateY(-50%); 
+    width: 400px; 
 }
 
+/* Tekst box */
 .sammenhold-box {
     max-width: 60rem; 
     margin-left: 9rem;
@@ -88,6 +93,7 @@ body {
     line-height: 2; 
 }
 
+/* Third container - "Støtte til alkolinjen" */
 .stoette-container {
     display: flex;
     position: relative;
@@ -99,10 +105,9 @@ body {
     margin: auto; 
     margin-left: 15rem;
     margin-top: 22rem;
-
-    
 }
 
+/* Brown-ale - Øl */
 .brown-ale-image {
     max-width: 100%; 
     position: absolute;
@@ -112,6 +117,7 @@ body {
     width: 400px; 
 }
 
+/* Tekst box */
 .stoette-box {
     max-width: 60rem; 
     margin-left: 24rem;
@@ -129,12 +135,7 @@ body {
     line-height: 2; 
 }
 
-.oelbrygning {
-    margin-top: 25rem;
-   width: 100%;
-
-}
-
+/* Støtte knap til alkolinjen */
 .stoette-btn {
     display: inline-block;
     background-color: #A55A20; 
@@ -153,4 +154,10 @@ body {
     transform: scale(1.05);
     color: #A55A20;
     cursor: pointer;
+}
+
+/* Infographic - Ølbrygning */
+.oelbrygning {
+    margin-top: 25rem;
+   width: 100%;
 }
