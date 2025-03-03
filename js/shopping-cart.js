@@ -3,12 +3,12 @@
 
 //En array der indeholder alle vores produkter der kan være i kurven, hvor mange de er, deres pris og den totale pris.
 let cart = [
-    {type: "brownAle", quantity: 0, price: 15, subTotal: 0},
-    {type: "passion", quantity: 0, price: 15, subTotal: 0},
-    {type: "lime", quantity: 0, price: 15, subTotal: 0},
-    {type: "pilsner", quantity: 0, price: 15, subTotal: 0},
-    {type: "hyldeblomst", quantity: 0, price: 15, subTotal: 0},
-    {type: "grape", quantity: 0, price: 15, subTotal: 0},
+    {type: "brownAle", quantity: 0, price: 5, subTotal: 0},
+    {type: "passion", quantity: 0, price: 10, subTotal: 0},
+    {type: "lime", quantity: 0, price: 10, subTotal: 0},
+    {type: "pilsner", quantity: 0, price: 5, subTotal: 0},
+    {type: "hyldeblomst", quantity: 0, price: 10, subTotal: 0},
+    {type: "grape", quantity: 0, price: 10, subTotal: 0},
 ];
 
 
