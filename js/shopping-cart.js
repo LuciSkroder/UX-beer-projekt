@@ -131,6 +131,7 @@ function resetEntireCart(){
     updateTotalPrice()
     saveCartToLocalStorage();
     updateUIFromCart();
+    clearCart()
 }
 
 //En function der gør at når man klikker på kurv-ikonet så viser eller skjuler den kurven.
@@ -157,4 +158,16 @@ function updateVisuals(item){
         itemAmount.classList.remove('beerShow');
         itemAmount.classList.add('beerHide');
     }
+}
+
+//Sikre at når hele kurven bliver slettet bliver den også fjernet fra localstorage. Dette sikre at priser bliver opdateret mere korrekt.
+function clearCart() {
+    localStorage.removeItem("cart"); // Remove the cart from localStorage
+    cart.forEach(item => {
+        item.quantity = 0;
+        item.subTotal = 0;
+    });
+
+    updateUIFromCart();
+    updateTotalPrice();
 }
