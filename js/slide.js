@@ -1,36 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let currentIndex = 0; // Start med det første billede
-    const slides = document.querySelectorAll('.slide'); // Vælg alle slides
+    let currentIndex = 0; // Start with the first image
+    const slides = document.querySelectorAll('.slide'); // Select all slides
     const totalSlides = slides.length;
-    const slidesToShow = 4; // Antal slides der skal vises ad gangen
+    const slidesToShow = 4; // Number of slides to show at a time
 
     function showSlides() {
-        // Skjul alle slides
+        // Hide all slides
         slides.forEach((slide) => {
-            slide.style.display = 'none'; // Skjul alle slides
+            slide.style.display = 'none'; // Hide all slides
         });
 
-        // Vis de 4 slides, der skal vises
+        // Show the 4 slides that should be visible
         for (let i = 0; i < slidesToShow; i++) {
-            const index = (currentIndex + i) % totalSlides; // Loop tilbage til starten
-            slides[index].style.display = 'flex'; // Vis den relevante slide
+            const index = (currentIndex + i) % totalSlides; // Loop back to the start
+            slides[index].style.display = 'flex'; // Show the relevant slide
         }
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides; // Gå til næste slide
+        currentIndex = (currentIndex + 1) % totalSlides; // Move to the next slide
         showSlides();
     }
 
     function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Gå til forrige slide
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Move to the previous slide
         showSlides();
     }
 
-    // Vis de første slides ved indlæsning
+    // Show the first slides on load
     showSlides();
 
-    // Tilføj event listeners til knapperne
+    // Add event listeners to the buttons
     document.querySelector('.next').addEventListener('click', nextSlide);
     document.querySelector('.prev').addEventListener('click', prevSlide);
+
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000); // Change slide every 3000 milliseconds (3 seconds)
 });
