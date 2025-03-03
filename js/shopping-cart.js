@@ -3,12 +3,12 @@
 
 //En array der indeholder alle vores produkter der kan være i kurven, hvor mange de er, deres pris og den totale pris.
 let cart = [
-    {type: "brownAle", quantity: 0, price: 15, subTotal: 0},
-    {type: "passion", quantity: 0, price: 15, subTotal: 0},
-    {type: "lime", quantity: 0, price: 15, subTotal: 0},
-    {type: "pilsner", quantity: 0, price: 15, subTotal: 0},
-    {type: "hyldeblomst", quantity: 0, price: 15, subTotal: 0},
-    {type: "grape", quantity: 0, price: 15, subTotal: 0},
+    {type: "brownAle", quantity: 0, price: 5, subTotal: 0},
+    {type: "passion", quantity: 0, price: 10, subTotal: 0},
+    {type: "lime", quantity: 0, price: 10, subTotal: 0},
+    {type: "pilsner", quantity: 0, price: 5, subTotal: 0},
+    {type: "hyldeblomst", quantity: 0, price: 10, subTotal: 0},
+    {type: "grape", quantity: 0, price: 10, subTotal: 0},
 ];
 
 
@@ -54,7 +54,22 @@ function addToCart(beer){
         saveCartToLocalStorage();
         updateUIFromCart();
         updateVisuals(product);
+
+        // Vis kurven, når et produkt tilføjes
+        showCart(); // Kalder funktionen til at vise kurven
+
+        // Luk kurven automatisk efter 3 sekunder
+        setTimeout(() => {
+            hideCart(); // Kalder en funktion til at skjule kurven
+        }, 3000);
     }
+}
+
+// Funktion til at skjule kurven
+function hideCart() {
+    const showCart = document.getElementById("cart-body");
+    showCart.classList.remove('cartShow');
+    showCart.classList.add('cartHide');
 }
 
 //En function der fjerner en enhed af det valgte produkt.

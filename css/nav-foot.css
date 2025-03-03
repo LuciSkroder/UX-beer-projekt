@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'zen maru gothic';
 }
  
 #front-logo {
@@ -28,7 +29,6 @@ nav {
 
 #nav-links li {
     margin: 3rem 10rem;
-    font-family: 'zen maru gothic';
 }
 
 #nav-links li:first-child {
@@ -96,6 +96,7 @@ nav {
     border-radius: 10px;
     padding: 1%;
     overflow: scroll;
+    padding: 1.2rem;
 }
 
 .beerShow {
@@ -119,24 +120,49 @@ nav {
 .row-flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .cart-title {
     margin: 0.5rem;
-    font-size: 1.2rem;
-    align-self: ce;
-    white-space: nowrap;
+    font-size: 1.4rem;
+    align-self: center;
+    margin-top: 2.5rem;
+    margin-left: -0.2rem;
+}
+
+.beerimg {
+    height: 10rem;
+    margin-right: 0.75rem;
 }
 
 .talfelt {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     text-align: center;
+    align-content: center;
+    align-self: end;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    color: #000000;
+    background-color: #e8e3dd;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.quantiyFelt {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    align-content: center;
     align-self: end;
     margin: 0.5rem;
     font-size: 1.25rem;
     color: #000000;
     font-weight: bold;
+    background-color: #e8e3dd;
+    border-radius: 10px;
+    border-style: none;
 }
 
 #brownAle-total, #passion-total, #lime-total, #pilsner-total, #hyldeblomst-total, #grape-total, #cart-total {
@@ -147,29 +173,22 @@ nav {
 }
 
 #cart-total {
-    align-self: center;
-    width: 7rem;
-    height: 3.5rem;
-    text-align: center;
-    margin: 0.5rem;
+    text-align: end;
+    margin-right: 0.5rem;
+    font-weight: bold;
 }
 
 .totalPrice {
     align-self: center;
 }
 
-.beerimg {
-    height: 6rem;
-    margin-right: 0.75rem;
-}
-
 .resetEntireCart {
-    background-color: #fcdede;
+    background-color: #faeeee;
 }
 
 .betaling {
     margin-top: 1rem;
-    background-color: rgb(49, 123, 219);
+    background-color: #afe5f9;
 }
 
 .betaling, .resetEntireCart {
@@ -177,6 +196,8 @@ nav {
     font-size: 1.4rem;
     font-weight: bold;
     font-family: 'Zen Maru Gothic';
+    border-style: none;
+    border-radius: 10px;
 }
 
 
