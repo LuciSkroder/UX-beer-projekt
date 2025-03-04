@@ -1,39 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let currentIndex = 0; // Start with the first image
-    const slides = document.querySelectorAll('.slide'); // Select all slides
+    let currentIndex = 0; // Starter med det første billede
+    const slides = document.querySelectorAll('.slide'); // Tager fat i alle slide
     const totalSlides = slides.length;
-    const slidesToShow = 4; // Number of slides to show at a time
+    const slidesToShow = 4; // Nummer af slides som vises efter tid
 
     function showSlides() {
         // Hide all slides
         slides.forEach((slide) => {
-            slide.style.display = 'none'; // Hide all slides
+            slide.style.display = 'none'; // Skjuler alle slides
         });
 
-        // Show the 4 slides that should be visible
+        // Viser de 4 slides, som skal være synlige ad gangen
         for (let i = 0; i < slidesToShow; i++) {
-            const index = (currentIndex + i) % totalSlides; // Loop back to the start
-            slides[index].style.display = 'flex'; // Show the relevant slide
+            const index = (currentIndex + i) % totalSlides; // Loop til starten 
+            slides[index].style.display = 'flex'; //Viser den relevante slide
         }
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides; // Move to the next slide
+        currentIndex = (currentIndex + 1) % totalSlides; // SKifter til næste slide
         showSlides();
     }
 
     function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Move to the previous slide
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Skifter til den forrige slide
         showSlides();
     }
 
-    // Show the first slides on load
+    // Viser den første slide
     showSlides();
 
     // Add event listeners to the buttons
     document.querySelector('.next').addEventListener('click', nextSlide);
     document.querySelector('.prev').addEventListener('click', prevSlide);
 
-    // Auto-slide every 3 seconds
-    setInterval(nextSlide, 3000); // Change slide every 3000 milliseconds (3 seconds)
+    // Auto-slide hver 3 sekund
+    setInterval(nextSlide, 3000);
 });
