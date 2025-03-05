@@ -54,14 +54,6 @@ function addToCart(beer){
         saveCartToLocalStorage();
         updateUIFromCart();
         updateVisuals(product);
-
-        // Vis kurven, når et produkt tilføjes
-        showCart(); // Kalder funktionen til at vise kurven
-
-        // Luk kurven automatisk efter 3 sekunder
-        setTimeout(() => {
-            hideCart(); // Kalder en funktion til at skjule kurven
-        }, 3000);
     }
 }
 
@@ -170,4 +162,14 @@ function clearCart() {
 
     updateUIFromCart();
     updateTotalPrice();
+}
+
+
+function openCart() {
+    const showCart = document.getElementById("cart-body");
+    
+    if (showCart.classList.contains('cartHide')){
+        showCart.classList.remove('cartHide');
+        showCart.classList.add('cartShow');
+    }
 }
