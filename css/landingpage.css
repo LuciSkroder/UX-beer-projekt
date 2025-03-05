@@ -56,6 +56,14 @@ h3{
     margin-bottom: 2em;
 }
 
+.prdtekst{
+    font-size: 1.5em;
+}
+
+#link{
+    color: rgb(87, 65, 0);
+}
+
 h2{
     font-size: 3em;
     display: flex;
@@ -198,8 +206,8 @@ section.slideshow-container {
     align-items: center;
 }
   
-button:hover {
-    background-color: #dd6d46;
+button.prev:hover, .next:hover {
+    background-color: #7d631a95;
     color: white;
 }
   
