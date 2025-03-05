@@ -84,3 +84,15 @@ h1 {
 .add-to-cart:active {
     background-color: #eda10f;
 }
+
+.quiz {
+    width: 100%;  /* Sætter bredden til 50% af dens oprindelige størrelse */
+    height: auto;  /* Bevarer billedets proportioner */
+}
+
+.quiz-center {
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-top: 12em;
+    padding-bottom: 7em;
+}
